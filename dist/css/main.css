@@ -1,0 +1,237 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  color: #222222;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  border: none;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+td:not([align]),
+th:not([align]) {
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color: #222222;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.2;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+}
+
+main .container {
+  text-align: center;
+  padding: .8em .8em;
+}
+
+main .container header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 5px 40px 0;
+}
+
+main .container header h1 {
+  font-family: Nunito;
+  font-size: 1.5rem;
+}
+
+main .container header select {
+  border: none;
+  font-size: 1.2rem;
+  padding: 5px;
+  font-family: Poppins;
+  text-transform: capitalize;
+}
+
+main .img-container {
+  width: 100%;
+  margin-top: 5%;
+  padding: 2em 0;
+}
+
+main .img-container .spinner {
+  font-size: 50px;
+  -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+  display: none;
+}
+
+main .img-container .dog-img {
+  display: none;
+  width: 80%;
+  margin: 1em auto;
+}
+
+main .img-container .show {
+  display: block;
+}
+
+@media only screen and (min-width: 320px) {
+  .container header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container header h1 {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  .container header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .img-container {
+    margin: 0;
+  }
+  .img-container .dog-img {
+    width: 20%;
+  }
+}
+
+@media only screen and (min-width: 875px) {
+  .container {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .dog-img {
+    width: 20%;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .container {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  .dog-img {
+    width: 20%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
