@@ -27,23 +27,19 @@ select.addEventListener('change', e => {
 const img = document.querySelector('.dog-img');
 const spinner = document.querySelector('.spinner');
 
-const getDoggo = (url) => {
+const getDoggo = url => {
   spinner.classList.add('show');
-  img.classList.remove('show')
+  img.classList.remove('show');
   fetch(url)
     .then(res => {
       return res.json();
     })
     .then(data => {
-      setTimeout(() => {
-        img.src = data.message;
-      }, 1000);
+      img.src = data.message;
     });
-}
+};
 
 img.addEventListener('load', () => {
   spinner.classList.remove('show');
-  setTimeout(() => {
-    img.classList.add('show');
-  }, 2000);
-})
+  img.classList.add('show');
+});
