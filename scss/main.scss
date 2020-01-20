@@ -28,7 +28,6 @@ main {
       }
 
       select {
-        border: none;
         font-size: 1.2rem;
         padding: 5px;
         font-family: Poppins;
@@ -83,30 +82,21 @@ main {
     }
   }
 
-  .img-container {
-    margin: 0;
 
-    .dog-img {
-      width: 20%;
-    }
-  }
 }
 
-@media only screen and (min-width: 875px){
-  .container{
+@media only screen and (min-width: 875px) {
+  .container {
     max-width: 80%;
     margin: 0 auto;
   }
-  .dog-img{
-    width: 20%;
-  }
 }
-@media only screen and (min-width: 1600px){
-  .container{
+
+
+@media only screen and (min-width: 1600px) {
+  .container {
     max-width: 70%;
     margin: 0 auto;
   }
-  .dog-img{
-    width: 20%;
-  }
+
 }

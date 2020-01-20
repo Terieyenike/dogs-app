@@ -152,7 +152,6 @@ main .container header h1 {
 }
 
 main .container header select {
-  border: none;
   font-size: 1.2rem;
   padding: 5px;
   font-family: Poppins;
@@ -207,12 +206,6 @@ main .img-container .show {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .img-container {
-    margin: 0;
-  }
-  .img-container .dog-img {
-    width: 20%;
-  }
 }
 
 @media only screen and (min-width: 875px) {
@@ -220,18 +213,12 @@ main .img-container .show {
     max-width: 80%;
     margin: 0 auto;
   }
-  .dog-img {
-    width: 20%;
-  }
 }
 
 @media only screen and (min-width: 1600px) {
   .container {
     max-width: 70%;
     margin: 0 auto;
-  }
-  .dog-img {
-    width: 20%;
   }
 }
 /*# sourceMappingURL=main.css.map */
