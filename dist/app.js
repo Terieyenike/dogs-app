@@ -29,6 +29,7 @@ const spinner = document.querySelector('.spinner');
 
 const getDoggo = (url) => {
   spinner.classList.add('show');
+  img.classList.remove('show')
   fetch(url)
     .then(res => {
       return res.json();
@@ -37,9 +38,12 @@ const getDoggo = (url) => {
       setTimeout(() => {
         img.src = data.message;
       }, 1000);
-      spinner.classList.remove('show');
-      setTimeout(() => {
-        img.classList.add('show');
-      }, 2000);
     });
 }
+
+img.addEventListener('load', () => {
+  spinner.classList.remove('show');
+  setTimeout(() => {
+    img.classList.add('show');
+  }, 2000);
+})
